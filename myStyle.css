@@ -1,0 +1,220 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgba(39, 130, 209, 0.308);
+}
+#orewa{
+    top: 100px;
+    left: 550px;
+
+    position: absolute;
+    font-size: 30px;  
+    font-family: sans-serif;
+    text-align: center;
+      
+    animation-name: orewaMove;   
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes orewaMove {
+    0% {font-size: 55px; color:  orange; opacity: 1;}
+    55% {font-size: 65px; color:yellow; opacity: 1; transform: rotate(360deg);}
+    80% {font-size: 65px; color: yellowgreen; opacity: 1; transform: rotate(360deg);}
+    100% {font-size: 75px; color: blue; opacity: 0;}
+}
+#bann1{
+    position: relative;
+    top:0px;
+    left:0px;
+    background: url("OrewaArial.jpg");
+    width: auto;
+    height: 280px;
+    max-width: 100%;
+    min-width: 600px;
+    overflow: hidden;
+   
+   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+#orewa-website-link{
+    position: absolute;
+    background-color: azure;
+    width: 165px;
+    height: 25px;
+    border-radius: px;
+    text-align: center;
+    right: 2%;
+    top: 5%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.text-font-family{
+    font-family:sans-serif;
+    
+}
+#myinfo{  position: absolute;
+    font-size: 15px;  
+    font-family: Trebuchet MS (sans-serif);
+    text-align: center;
+    margin-top: 100px; 
+    left: 550px;  
+    animation: myInfoMove 3s 8s forwards;
+    opacity:0;
+    text-shadow: 1px 1px;
+    
+
+}
+@keyframes myInfoMove{
+    0% {font-size: 30px; color: navy; opacity: 10;}
+    50% {font-size: 40px; color: rgba(255, 0, 0, 0.64); opacity: 10;}
+    100% {font-size: 30px; color: navy; opacity: 10;}
+}
+#slogan{
+    position: absolute;
+    font-size: 15px;  
+    font-family: sans-serif;
+    text-align: center; 
+    margin-top: 100px; 
+    left: 400px;  
+    animation-name: sunMove;   
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    opacity:0;
+}
+@keyframes sunMove {
+    0% {font-size: 50px; color:  #8600b3; opacity: 1;}
+    50% {font-size: 60px; color: #3004f4; opacity: 1;}
+    100% {font-size: 70px; color: #8600b3; opacity: 0;}
+
+}
+#about-orewa{
+    
+    width: 400px;
+    height: 400px;
+    
+    position: absolute;
+    font: 1em sans-serif;
+    background-color: rgba(0, 128, 128, 0.539);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    left:5%;
+    top:48%;
+    padding: 30px;
+    
+}
+#assingment-items{
+    margin:5px;
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    right: 2pc;
+    background-color:bisque;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    font-size: large;
+    padding: 5px;
+    font-family: sans-serif;font-weight: bold;
+    top: 19pc;
+}
+#facility{
+    
+    position: absolute;
+    width: 245px;
+    height: 120px;
+    right: 2pc;
+    top:25pc;
+    background-color: rgba(0, 128, 0, 0.476);
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    font-size: large;
+    padding: 5px;
+    font-family: sans-serif;font-weight: bold;
+    top:27pc;
+    right:3%
+}
+#booking-Form{
+    position:absolute;
+    
+   
+    background-color: white;
+   width: 400px;
+   height: 400px;
+   margin: px;
+    padding: 30px;
+    right: 30%;
+    top :48%;
+    
+}
+button{
+    height: 35px;
+    width:65px;
+    border-radius: 0%;
+    background-color:rgba(0, 0, 128, 0.382);
+    border:none;
+}
+select{
+    border: none;
+}
+input{
+    background-color: aliceblue;
+    border: none;
+}
+#animationImage1 {
+    position: absolute;
+    height: 280px;
+    animation-duration: 14s;
+    animation: image1 4.2s 1.3s ease;
+    transform: translateY(100%);
+}
+#aImage1{
+    height: 280px;
+    width:120%;
+}
+#aImage2{
+    height: 280px;
+    width:340%;
+}
+@keyframes image1 {
+    0% {opacity:0;}
+    60% {opacity:1;}
+    100% { transform: translateY(0); opacity:0;}
+  }
+#animationImage2 {
+    position: absolute;
+    opacity: 0;
+    position: absolute;
+    transform: translateX(100%);
+    animation: image2 3.1s 6.1s ease-in-out;
+    
+}
+@keyframes image2 {
+    0% {opacity:1;}
+    90% { transform: translateX(0); opacity:1;}
+    100% { transform: translateX(0); opacity:0;}
+  }
+#id-address{
+    width:200px;
+    height:60px;
+}
+#carAd{
+    position: absolute;
+    width: 245px;
+    height: 120px;
+    background:url("road.png") ;
+    right:3%;
+    top:90%;
+}
+#car{
+    position: relative;
+    width: 150px;
+    height: 75px;
+    transform: translateX(100%);
+        animation-name: carSpin;   
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes carSpin{
+    0% {opacity:1;}
+    90% { transform: translateX(0); opacity:1;}
+    100% { transform: translateX(0); opacity:1;}
+}

@@ -1,0 +1,266 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orewa</title>
+    
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+        
+<body>
+    <div id="bann1">
+        <div id = animationImage1><img id="aImage1"src="OrewaUltraWide.jpg" alt="orewArial"/></div>
+        <div id = animationImage2><img id ="aImage2"src="coastalGrassOrewa.jpg" alt="orewaImg"/></div>
+        <div class="text-font-family" id="Orewa">Orewa</div>
+        <div class="text-font-family"id="myinfo">Vijay Kumar <br> Student ID:1547108</div>
+        <div id="orewa-website-link">
+            <a class="text-font-family"style="color:skyblue"href="https://orewabeach.co.nz/" target="Orewa Website">Orewa Offical Website</a>
+        </div>
+        <div class="text-font-family" id="slogan" class="text-font-fmaily">Our Lifestyle <br>Your Destiny
+        </div>
+    </div>
+
+
+    
+
+
+
+    <div id="about-orewa">
+        <h2>
+            Welcome to Orewa Lodge
+            </h2>
+            <div>
+            <p id="abou-us-para"> Orewa Motor Lodge is a 4 star Motel on the Hibiscus Coast Highway ‐ just over the road from the sands of Orewa Beach and the sparkling waters of the magnificent Hauraki Gulf.  We’re only a short walk to Orewa centre, with it’s great selection of restaurants, cafes & shops.</p>
+            </div>
+        </div>
+    
+
+
+
+  <div id="booking-form" >
+    <form id="registrationForm">
+        <progress id="progression" value="0" max="100">32%</progress>
+        <div id = reservationDetail>
+            <h2 h2 class="page-heading"> 1: Reservation Detail </h2>
+            <label class="text-font-family"> Select Check-In date: </label><input type="date" id="checkInDate"><br><br>
+            <label class="text-font-family"> Select Check-out date: </label><input type="date" id="checkOutDate"><br><br>
+            <label class="text-font-family">Rooms Required: </label>
+            <select class="text-font-family" name="room" id="roomID">
+                <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+            </select><br><br>
+            <label class="text-font-family">No. of Adults:</label>
+            <select id="id-Adult" name="name-Adult">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select><br><br>
+            
+            <label  class="text-font-family">No. of Children:</label>
+           <select name="name-Child" id="id-Child">
+            
+           <option value="0">0</option>
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           </select><br><br>
+
+           <input type="checkbox" ><label class="text-font-family">I agree with Terms and Condtions of Orewa Lodge</label><br><br>
+           <button type="button" onclick="display2ndPage()">Next</button>
+           
+
+        </div>
+        <div id = personalDetails style="display: none;">
+            <h2 class="page-heading">2: Personal Details</h2>
+            <label class="text-font-family">First Name:</label>
+            <input type="text" id="id-firstName" name="name-firstName"><br><br>
+            <label class="text-font-family">Last Name:</label>
+            <input type="text" id="id-lastName" name="name-lastName"><br><br>
+            <label class="text-font-family" for="age">Age:</label>
+            <input type="date" id="id-age"><br><br>
+
+            <label class="text-font-family">Gender:</label>
+            <select id="id-gender" name="name-gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select><br><br>
+
+            <label class="text-font-family">Phone:</label>
+            <input id="id-phone" name="phone" type="tel"><br><br>
+            <label class="text-font-family">Address:</label>
+            <input type="text" id="id-address" name="name-address"><br><br>
+            <button type="button" onclick="display1stPage()">Previous</button>
+            <button type="button" onclick="display3rdPage()">Next</button>
+       </div>
+       <div id = "extraAmaneties" style="display: none;">
+            <h2 class="pageHeading">3:Extra Amaneties</h2>
+        <label class="text-font-family">Extra Bed:</label>
+            <select name="name-bed" id="id-bed">
+            <option value="0">0</option>
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+            </select><br><br>
+        <label class="text-font-family">Extra Towels:</label>
+        <select name="name-towel" id="id-towel">
+            <option value="0">0</option>
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+            </select><br><br>
+        <label class="text-font-family">Unlimited Wifi:</label>
+            <input type="checkbox" name="name-wifi" id="id-wifi"><br><br>
+
+            <button type="button" onclick="display2ndPage()">Previous</button>
+            <button type="button" onclick="display4thPage()">Submit</button>
+
+        </div>
+        <div id ="bookingSummary" style="display: none;">
+            <h2 class="text-font-family">4: Booking Summary</h2>
+            <div id="table-booking-Summary"></div>
+            <table class="text-font-family">
+                <tr>
+                    <td >
+                        First name
+                    </td>
+                    <td>
+                        <P id="summaryFirstName">-</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        Last Name
+                    </td>
+                    <td>
+                        <P id="summaryLastName">-</P>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email:
+                    </td>
+                    <td >
+                        <P id="summaryEmail">-</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        Phone:
+                    </td>
+                    <td>
+                        <P id="summaryPhone">-</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td >
+                        Check-In:
+                    </td>
+                    <td>
+                        <P id="summaryCheckIn">-</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td >
+                        Check-Out
+                    </td>
+                    <td >
+                        <P id="summaryCheckOut">-</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td >
+                        No. of Rooms
+                    </td>
+                    <td>
+                        <P id="summaryRoomCount">-</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        No. of Adults
+                    </td>
+                    <td >
+                        <P id="summaryAdultCount">-</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        No. of Children
+                    </td>
+                    <td>
+                        <P id="summaryChildCount">-</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        Extra Bed
+                    </td>
+                    <td>
+                        <P id=summaryExtraBed>-</P>
+                    </td>
+                </tr> 
+                <tr>
+                    <td >
+                        Extra Towels
+                    </td>
+                    <td>
+                        <P id="summaryExtraTowel">-</P>
+                    </td>
+                </tr>  
+                
+                <tr>
+                    <td >
+                        Unlimited wifi
+                    </td>
+                    <td>
+                        <P id="summaryWifi">-</P>
+                    </td>
+                </tr>     
+    
+            </table><br>
+            <button type="button" onclick="display3rdPage()">Previous</button>
+                        <button type="button" onclick="bookingConfirmed()
+                        ">confirm</button>
+        </div>
+    </form></div>
+    <div id = facility>
+        <ul>
+            <li>Free Parking</li>
+            <li>24 hour room service</li>
+            <li>Swimming pool</li>
+            <li>Gym</li>
+        </ul>
+    </div>
+    <div id="assingment-items">
+        
+            
+        <ol id="List-bar">
+            <li id="list-item">
+            <a href="storyboard-1.pdf" target="_blank">Story Board 1</a>
+        </li>
+        <li id="list-item">
+            <a id="nav-link" href="storyboard-2.pdf" target="_blank">Story Board 2</a>
+          </li>
+          <li id="list-item">
+            <a id="item-link" href="wireframe.pdf" target="_blank">Wireframe</a>
+          </li>
+        </ol>
+    
+</div>
+<div id="carAd">
+    <img src="car.png" id="car">
+    <div id="carLink">
+        <a class="text-font-family"style="color:blue"href="https://www.toyota.co.nz/new-car/highlander/HIGHLANDER-HKBG-NM1/?skuCode=HIGHLANDER-HKBG-NM1-089-20#features" target="carLink">Learn more</a>
+    </div>
+</div>
+<script src="myScript.js"></script>
+</body>
+</html>
